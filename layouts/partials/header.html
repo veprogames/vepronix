@@ -1,3 +1,14 @@
 <header>
-    
+    <h1>{{ .Site.Title }}</h1>
+    <nav>
+        <ul>
+            {{ range .Site.Menus.main }}
+                {{ if .URL }}
+                    <li><a target="_blank" href="{{.URL}}">{{ .Name }}</a></li>
+                {{ else if .Identifier }}
+                    <li><a href="/{{.Identifier}}">{{ .Name }}</a></li>
+                {{ end }}
+            {{ end }}
+        </ul>
+    </nav>
 </header>

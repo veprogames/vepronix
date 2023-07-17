@@ -1,3 +1,14 @@
 <footer>
-    
+    <nav>
+        <ul>
+            {{ range .Site.Menus.footer }}
+                {{ if .Identifier }}
+                    <li><a href="/{{.Identifier}}">{{ .Name }}</a></li>
+                {{ else if .URL }}
+                    <li><a target="_blank" href="{{.URL}}">{{ .Name }}</a></li>
+                {{ end }}
+            {{ end }}
+        </ul>
+    </nav>
+    <p>Powered by <a href="/">vepronix</a>@<a href="https://gohugo.io/">Hugo</a></p>
 </footer>

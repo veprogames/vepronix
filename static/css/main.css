@@ -51,3 +51,11 @@ table thead{
 table tr:nth-child(2n){
     background-color: #333;
 }
+
+a {
+    color: aqua;
+}
+
+a:visited {
+    color: skyblue;
+}
