@@ -2,10 +2,10 @@
     <nav>
         <ul>
             {{ range .Site.Menus.footer }}
-                {{ if .Identifier }}
+                {{ if .URL }}
+                    <li><a href="{{.URL}}">{{ .Name }}</a></li>
+                {{ else if .Identifier }}
                     <li><a href="/{{.Identifier}}">{{ .Name }}</a></li>
-                {{ else if .URL }}
-                    <li><a target="_blank" href="{{.URL}}">{{ .Name }}</a></li>
                 {{ end }}
             {{ end }}
         </ul>

@@ -14,6 +14,7 @@ main {
     max-width: 960px;
     margin: 0 auto;
     padding: 1rem;
+    min-height: 50vh;
 }
 
 /* Markdown rendering related */
@@ -23,7 +24,7 @@ p {
 }
 
 ul {
-    padding-left: 1rem;
+    padding-left: 0.85em;
     margin: 0.25rem 0;
 }
 
@@ -58,4 +59,8 @@ a {
 
 a:visited {
     color: skyblue;
+}
+
+small {
+    font-size: 0.6em;
 }
