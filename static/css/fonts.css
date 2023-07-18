@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "FiraSans";
+    src: url("/fonts/FiraSans-Regular.woff") format("woff"),
+        url("/fonts/FiraSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "FiraCode";
+    src: url("/fonts/FiraCode-Regular.woff") format("woff"),
+        url("/fonts/FiraCode-Regular.woff2") format("woff2");
+}

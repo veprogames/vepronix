@@ -7,7 +7,7 @@
 body {
     background-color: black;
     color: white;
-    font-family: sans-serif;
+    font-family: "FiraSans", Helvetica, sans-serif;
 }
 
 main {
@@ -63,4 +63,25 @@ a:visited {
 
 small {
     font-size: 0.6em;
+}
+
+div.highlight {
+    margin: 0.25rem 0;
+}
+
+div.highlight code {
+    font-family: "FiraCode", monospace;
+}
+
+div.highlight code > span:nth-child(2n){
+    background-color: #2e2f29;
+}
+
+pre > code:not([class]) {
+    background-color: #222;
+}
+
+p code {
+    color: #ff5a96;
+    background-color: #222;
 }
