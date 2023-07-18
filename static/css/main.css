@@ -14,10 +14,19 @@ main {
     max-width: 960px;
     margin: 0 auto;
     padding: 1rem;
-    min-height: 50vh;
+    min-height: 75vh;
 }
 
 /* Markdown rendering related */
+
+main h1:not(:first-child),
+main h2:not(:first-child),
+main h3:not(:first-child),
+main h4:not(:first-child),
+main h5:not(:first-child),
+main h6:not(:first-child) {
+    margin-top: 1em;
+}
 
 p {
     margin: 0.25rem 0;
@@ -66,7 +75,7 @@ small {
 }
 
 div.highlight {
-    margin: 0.25rem 0;
+    margin: 0.5rem 0;
 }
 
 div.highlight code {
@@ -84,4 +93,9 @@ pre > code:not([class]) {
 p code {
     color: #ff5a96;
     background-color: #222;
+}
+
+time {
+    color: #bbb;
+    font-size: 0.8em;
 }
