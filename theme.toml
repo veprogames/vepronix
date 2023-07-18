@@ -1,9 +1,6 @@
 name = "vepronix"
-
-# TBD
-#license = "MIT"
-#licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-
+license = "MIT"
+licenselink = "https://github.com/veprogames/vepronix/blob/main/LICENSE"
 description = "A very simple, high contrast (AMOLED) theme."
 homepage = "https://github.com/veprogames/vepronix"
 tags = []
