@@ -7,7 +7,7 @@
             {{ range .Pages }}
                 <li>
                     <a href="{{.Permalink}}">{{.Title}}</a><br/>
-                    <time>{{.Date.Format "2006-01-02 15:04:05"}}</time>
+                    <time>{{.Date.Format "2006-01-02"}}</time>
                     <small>{{.Content | truncate 100}}</small>
                 </li>
             {{ end }}
