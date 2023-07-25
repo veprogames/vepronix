@@ -23,8 +23,17 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0.5em 0;
 }
 
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+    border-bottom: 1px solid gray;
+}
+
 p {
-    margin: 0.25rem 0;
+    margin: 1rem 0;
 }
 
 section {
@@ -73,25 +82,32 @@ small {
     font-size: 0.6em;
 }
 
+code {
+    color: #ff5a96;
+    background-color: #222;
+}
+
+pre {
+    background-color: #272822;
+    line-height: 0.7em;
+}
+
+pre > code {
+    color: white;
+}
+
 div.highlight {
-    margin: 0.5rem 0;
+    margin: 2rem 0;
 }
 
 div.highlight code {
+    color: white;
+    line-height: initial;
     font-family: "FiraCode", monospace;
 }
 
 div.highlight code > span:nth-child(2n){
     background-color: #2e2f29;
-}
-
-pre > code:not([class]) {
-    background-color: #222;
-}
-
-p code {
-    color: #ff5a96;
-    background-color: #222;
 }
 
 time {
