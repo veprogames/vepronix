@@ -89,10 +89,10 @@ code {
 
 pre {
     background-color: #272822;
-    line-height: 0.7em;
 }
 
 pre > code {
+    background-color: #272822;
     color: white;
 }
 
